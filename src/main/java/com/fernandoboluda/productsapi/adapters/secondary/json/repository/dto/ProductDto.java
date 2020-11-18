@@ -1,0 +1,16 @@
+package com.fernandoboluda.productsapi.adapters.secondary.json.repository.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ProductDto {
+
+  private String sku;
+  private String name;
+  private String category;
+  private Integer price;
+}
