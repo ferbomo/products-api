@@ -2,15 +2,15 @@ package com.fernandoboluda.productsapi.domain.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 @Builder
 @AllArgsConstructor
 public class Price {
 
-  private Integer price;
-  private Integer priceWithDiscount;
-  private Integer discountPercentage;
-  private String currency;
+  private final Integer price;
+  private final Integer priceWithDiscount;
+  private final Integer discountPercentage;
+  private final String currency;
 }

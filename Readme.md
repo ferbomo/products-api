@@ -23,9 +23,9 @@ and finally return them converted to a valid response.
 Every important class is unit tested, and there is a small controller test.
 
 ## Execution
-In the main folder, run: mvn clean install to create the executable and run the tests.
+In the main folder, run: ./run.sh. 
 
-Go to the target folder and type: java -jar products-api-0.1.0-SNAPSHOT.jar
+If it doesn't work, try to give permissions to the .sh file using: chmod u+x
 
 In the browser, go to http://localhost:8080/swagger-ui.html, and you will find the swagger page to test
 easily the endpoint.

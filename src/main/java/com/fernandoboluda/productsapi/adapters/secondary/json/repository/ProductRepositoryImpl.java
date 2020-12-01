@@ -21,11 +21,11 @@ public class ProductRepositoryImpl implements ProductRepository {
 
   private static final String JSON_FILE = "products.json";
   private final ProductDtoToProductConverter converter;
+  private final ObjectMapper objectMapper = new ObjectMapper();
 
   @Override
   public List<Product> getAllProducts() {
     List<ProductDto> productDtoList = new ArrayList<>();
-    ObjectMapper objectMapper = new ObjectMapper();
     try {
       productDtoList = asList(
           objectMapper.readValue(new ClassPathResource(JSON_FILE).getInputStream(), ProductDto[].class));

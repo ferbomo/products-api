@@ -2,17 +2,15 @@ package com.fernandoboluda.productsapi.adapters.primary.rest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 
-@Data
+@Getter
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
 public class ProductResponse {
 
-  private String sku;
-  private String name;
-  private String category;
-  private PriceResponse price;
+  private final String sku;
+  private final String name;
+  private final String category;
+  private final PriceResponse price;
 }
